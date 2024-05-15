@@ -20,10 +20,3 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
-
-.border-blue{
-    border-width: 1px;
-    border-radius: 5px;
-    border-style: dotted;
-    border-color: blue;
-}
