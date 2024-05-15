@@ -1,0 +1,14 @@
+.red{
+    background-color: #FF0000;
+    height: 360px;
+}
+
+.white{
+    background-color: #FFFFFF;
+    height: 360px;
+}
+
+.border{
+    border-color: #000000;
+    border-style: solid;
+}
