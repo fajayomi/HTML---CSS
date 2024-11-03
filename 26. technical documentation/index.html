@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Technical Documentation</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>
+      HTML Documentation
+    </header>
+    <ul>
+      <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+      <li><a href="#Basic" class="nav-link">Basic</a></li>
+      <li><a href="#Elements" class="nav-link">Elements</a></li>
+      <li><a href="#Attributes" class="nav-link">Attributes</a></li>
+      <li><a href="#Forms" class="nav-link">Forms</a></li>
+      <li><a href="#Reference" class="nav-link">Reference</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>
+        Introduction
+      </header>
+      <p>HTML (HyperText Markup Language) is the standard language for creating web pages. It describes the structure of
+        web pages using tags. Tags label pieces of content such as headings, paragraphs, links, and more.</p>
+    </section>
+
+    <section class="main-section" id="Basic">
+      <header>
+        Basic
+      </header>
+      <p>An HTML document is made up of various parts:</p>
+      <ul>
+        <li>DOCTYPE Declaration: Specifies the version of HTML used (e.g., <code>&lt;!DOCTYPE html&gt;</code>).</li>
+        <li>HTML Element: The root element that contains all other elements (<code>&lt;html&gt;</code>).</li>
+        <li>Head Section: Contains meta-information about the document (e.g., title, character set) and is defined by
+          the <code>&lt;head&gt;</code> tag.</li>
+        <li>Body Section: Contains the content of the web page that is displayed to the user, enclosed in the
+          <code>&lt;body&gt;</code> tag.
+        </li>
+      </ul>
+      <p>Below is an example of a simple HTML document:</p>
+      <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+          &lt;head&gt;
+            &lt;title&gt;My First HTML Page&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;h1&gt;Hello World!&lt;/h1&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;
+      </code></pre>
+    </section>
+
+    <section class="main-section" id="Elements">
+      <header>
+        Elements
+      </header>
+      <p>HTML elements are the building blocks of HTML pages. They consist of:</p>
+      <ul>
+        <li>Opening Tag: Indicates the start of an element (e.g., <code>&lt;h1&gt;</code>).</li>
+        <li>Content: The text or other elements that are enclosed by the opening and closing tags.</li>
+        <li>Closing Tag: Indicates the end of an element (e.g., <code>&lt;/h1&gt;</code>).</li>
+      </ul>
+      <p>Common HTML elements:</p>
+      <ul>
+        <li>Headings: <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> for different heading levels.</li>
+        <li>Paragraph: <code>&lt;p&gt;</code> for text paragraphs.</li>
+        <li>Links: <code>&lt;a&gt;</code> for hyperlinks.</li>
+        <li>Images: <code>&lt;img&gt;</code> for displaying images.</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Attributes">
+      <header>
+        Attributes
+      </header>
+      <p>Attributes provide additional information about HTML elements and are always specified in the opening tag.
+        They come in name/value pairs, separated by an equals sign.</p>
+      <p>Example HTML attributes:</p>
+      <ul>
+        <li>href: Specifies the URL of a link.</li>
+        <li>src: Specifies the source of an image.</li>
+        <li>alt: Provides alternative text for an image.</li>
+      </ul>
+      <pre><code>
+        &lt;a href=&quot;https://www.w3schools.com/html/&quot;&gt;
+      </code></pre>
+    </section>
+
+    <section class="main-section" id="Forms">
+      <header>
+        Forms
+      </header>
+      <p>HTML forms are used to collect user input. They consist of various input elements, such as text fields,
+        checkboxes, radio buttons, and buttons, all enclosed within a <code>&lt;form&gt;</code> tag.</p>
+      <p>Common form elements:</p>
+      <ul>
+        <li>Text Input: <code>&lt;input type=&quot;text&quot;&gt;</code></li>
+        <li>Password Input: <code>&lt;input type=&quot;password&quot;&gt;</code></li>
+        <li>Submit Button: <code>&lt;input type=&quot;submit&quot;&gt;</code></li>
+        <li>Select Dropdown: <code>&lt;select&gt;&lt;/select&gt;</code></li>
+      </ul>
+      <pre><code>
+        &lt;form action=&quot;/submit&quot; method=&quot;post&quot;&gt;
+          &lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
+          &lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot;&gt;
+          &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+        &lt;/form&gt;
+      </code></pre>
+    </section>
+
+    <section class="main-section" id="Reference">
+      <header>
+        Reference
+      </header>
+      <p>All the documentation and examples on this page are taken from <a href="https://www.w3schools.com/html/"
+          target="_blank">w3schools</a>.</p>
+    </section>
+  </main>
+</body>
+
+</html>

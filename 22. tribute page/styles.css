@@ -1,0 +1,43 @@
+#main{
+    background-color: #f4f4f9;
+    font-family: sans-serif;
+    color: #333333;
+    text-align: center;
+    padding: 20px;
+    border-radius: 1%;    
+    min-width: 300px;
+    margin:0 auto;
+}
+
+#img-div{
+margin: 10px;
+padding: 10px 0 20px 0;
+background-color: #ffffff;
+border-radius: 1%;
+}
+
+#image{
+    display: block;
+    height: auto;
+    max-width: 80%;
+    border-radius: 1%;
+    margin:0 auto;
+}
+
+#bio-div{
+    padding-top: 20px;
+}
+
+#tribute-info{
+    padding: 20px 150px 0px 150px;
+    letter-spacing: 0.5px;
+    line-height: 2;
+}
+
+#image-caption{
+    text-align: center;
+}
+
+#tribute-link{
+    font-weight: bold;
+}

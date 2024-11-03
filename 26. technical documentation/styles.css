@@ -1,0 +1,134 @@
+body{
+    min-width: 290px;
+    font-family: sans-serif;
+    color: #303030;
+    background-color: #f1f1e2;
+    line-height: 1.5;
+}
+
+header{
+    color: black; 
+    margin: 10px; 
+    text-align: center; 
+    font-size: 1.5em; 
+}
+
+#navbar{
+    position: fixed;
+    width: 260;
+    min-width:200px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    border-right: solid;
+    border-color: rgba(90, 90, 90, 0.4)
+}
+
+#navbar ul{
+    height: 80%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li{
+    width: 100%;
+    list-style-type: none;
+    border-top: 2px solid rgba(90, 90, 90, 0.4);
+    position: relative;
+}
+
+#navbar a {
+    padding: 10px 30px;
+    color: #303030;
+    text-decoration: none;
+    cursor: pointer; 
+    font-size: 1.2em;
+    line-height: 2;
+}
+
+#main-doc{
+    
+    margin-left: 260px;
+    position: absolute;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+#main-doc header{
+    text-align: left;
+    margin: 0;
+}
+
+section article{
+    color: #303030;
+    margin: 15px; 
+    font-size: 0.95em;
+}
+
+section li{
+    margin: 15px 0px 0px 20px;
+}
+
+code{
+    font-family: 'Courier New', Courier, monospace;
+    word-break: normal;
+    word-wrap: normal; 
+}
+
+pre{
+    display: block;
+    position: relative;
+    line-height: 2;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+pre, code{
+    background-color: #dadada;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 800px) {
+  
+    #navbar ul {
+        border: 1px solid; 
+        height: 150px; 
+      }
+    
+      #navbar {
+        background-color: #f5f5f5 ; 
+        position: fixed; 
+        top: 0; 
+        padding: 0; 
+        margin: 0; 
+        width: 100%;
+        max-height: 250px; 
+        border: none; 
+        z-index: 1; 
+        border-bottom: 2px solid; 
+      }
+    
+      #main-doc {
+        position: relative; 
+        margin-left: 0px; 
+        margin-top: 260px; 
+      }
+}
+
+@media only screen and (max-width: 400px) {
+    #main-doc {
+      margin-left: -10px;
+    }
+  
+    pre {
+      margin-left: -20px;
+      width: 100%; 
+      padding: 15px; 
+      padding-left: 10px; 
+      padding-right: 45px; 
+      min-width: 233px; 
+    }
+  }
+  

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta char="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out this form with the required information</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <fieldset>
+
+                <label id="name-label" for="name">Name<input id="name" type="text" name="name"
+                        placeholder="Enter your name" required></label>
+                <label id="email-label" for="email">Email<input id="email" type="email" placeholder="Enter yout email"
+                        required></label>
+                <label id="number-label" for="number">Age (years)<input id="number" type="number" name="number" min="13"
+                        max="120" placeholder="Enter your age" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Do you have experience in programming before?</legend>
+                <label for="yes-exp"><input id="yes-exp" type="radio" name="dev-type" value="yes" class="inline"
+                        checked>Yes</label>
+                <label for="no-exp"><input id="no-exp" type="radio" name="dev-type" value="no" class="inline">No</label>
+            </fieldset>
+            <fieldset>
+                <legend>How satisfied are you with the courses material?</legend>
+                <label><input type="checkbox" value="very satisfied" class="inline">Very Satisfied</label>
+                <label><input type="checkbox" value="satisfied" class="inline">Satisfied</label>
+                <label><input type="checkbox" value="neutral" class="inline">Neutral</label>
+                <label><input type="checkbox" value="dissatisfied" class="inline">Dissatisfied</label>
+                <label><input type="checkbox" value="very dissatisfied" class="inline">Very Dissatisfied</label>
+            </fieldset>
+            <fieldset>
+                <label id="label-dropdown" for="dropdown">What type of developer you want to be?</label>
+                <select id="dropdown">
+                    <option value="">Choose type</option>
+                    <option value="front-end">Front-End</option>
+                    <option value="back-end">Back-End</option>
+                    <option value="fullstack">Fullstack</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="suggestion">Provide a suggestions:</label>
+                <textarea id="suggestion" name="suggestion" rows="5" cols="40"
+                    placeholder="I hope there is more complex project..."></textarea>
+            </fieldset>
+            <input id="submit" type="submit" value="submit">
+        </form>
+    </main>
+</body>
+
+</html>
